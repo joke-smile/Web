@@ -29,6 +29,12 @@ s
     text-decoration-line:underline;
 }
 
+video
+{
+    width: 500px;
+    height: 500px;
+}
+
 .evalutions
 {
     padding: 2%;
