@@ -1,12 +1,78 @@
-body {
-	BackGround: #696969;
-	color: gold;
-}
-a {
-	color: white;
-}
-.up {
-	margin-top: -440;
+BODY 
+{
+    background:url("images/topic2.jpg")  no-repeat center center fixed;
+    -webkit-background-size: 100%; 
+    -moz-background-size: 100%; 
+    -o-background-size: 100%; 
+    background-size: 100%; 
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+	font-size: 27px;
+	color: goldenrod;
 }
 
+table
+{
+    font-size: 27px;
+}
 
+td 
+{
+    border: 2px solid lightgray;
+    text-align: center;
+}
+
+s 
+{
+    text-decoration-line:underline;
+}
+
+video
+{
+    width: 500px;
+    height: 500px;
+}
+
+.evalutions
+{
+    padding: 2%;
+    color: #fff;
+    text-align: center;
+}
+
+.evalutions_table
+{
+    width: 100%;
+    max-width: 1000px;
+    margin:auto;
+}
+
+.button
+{
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.buttons
+{
+    padding: 3%;
+    text-align: center;
+}
+
+.okey
+{
+    background-color: green;
+}
+
+.bad
+{
+    background-color: darkred;
+}
+
+a 
+{
+	color: goldenrod;
+}
