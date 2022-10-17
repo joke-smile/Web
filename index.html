@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+<link rel="stylesheet" href="style.css">
+<TITLE> pff_ladno </TITLE>
+</HEAD>
+<BODY>
+    <font face="arial">
+    <br>
+    <p align="center">Персональная страница Зименкина Льва Алексеевича (18.04.2003)</p>
+    <p align="center">Студент факультета вычислительных систем группы 571-2</p>
+    <p align="center">
+    <br>  
+    <a href="about.html">Обо мне</a>
+    <br>
+    <a href="studing.html"> Сведения об успеваемости </a>
+    <br>
+    <a href="Attendance.html"> Посещаемость </a>
+    <br>
+    <a href="other.html">Другое</a>
+    </p>
+</font>
+<script type="text/javascript">
+    function DrawTable(semestr)
+    {
+        var k = document.getElementById(semestr);
+        if (semestr == "1semestr")
+        {
+            document.getElementById("1btn").style.color = "#c4efaa";
+            document.getElementById("2btn").style.color = "#fff";
+            var k2 = document.getElementById("2semestr");
+        }
+        else 
+        {
+            document.getElementById("2btn").style.color = "#c4efaa";
+            document.getElementById("1btn").style.color = "#fff";
+            var k2 = document.getElementById("1semestr");
+        }
+
+        k2.style.display = "none";
+        k.style.display == "none" ? k.style.display = "table" : k.style.display = "table";
+    }
+</script>
+
+</BODY>
+</HTML>

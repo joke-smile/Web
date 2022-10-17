@@ -1,0 +1,12 @@
+body {
+	BackGround: #696969;
+	color: gold;
+}
+a {
+	color: white;
+}
+.up {
+	margin-top: -440;
+}
+
+

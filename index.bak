@@ -1,0 +1,23 @@
+<HTML>
+<HEAD>
+<link rel="stylesheet" href="style.css">
+<TITLE> Персональная страница </TITLE>
+</HEAD>
+<BODY>
+<h1> Информация об авторе: </h1>
+<br>
+ФИО: Зименкин Лев Алексеевич (2003-го года рождения)
+<br>
+<a target="blank" href="placeofborning.html">
+Место рождения
+</a> 
+<br>
+<a target="blank" href="education.html"> Образование </a>
+<br>
+<a target="blank" href="studing.html"> Сведения об успеваемости </a>
+Любимые занития: волейбол, карточная магия.
+<br>
+
+<a target="blank" href="nothing.html"> Куда-то </a>
+</BODY>
+</HTML>
