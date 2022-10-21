@@ -1,6 +1,6 @@
 BODY 
 {
-    background:url("images/topic2.jpg")  no-repeat center center fixed;
+    background:url("topic5.jpg")  no-repeat center center fixed;
     -webkit-background-size: 100%; 
     -moz-background-size: 100%; 
     -o-background-size: 100%; 
@@ -147,6 +147,58 @@ s
 .hobbies_img
 {
     text-align: center;
+}
+
+.topbutton {
+    width: auto;
+    max-width: 200px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    cursor: pointer;
+    font-family: verdana;
+    font-size: 15px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+}
+
+.topbutton {
+    border: 2px solid #ccc;
+    background-color: rgb(112, 99, 133);
+    color: #fff;
+}
+
+.bottombutton {
+    border: 2px solid #ccc;
+    background-color: rgb(112, 99, 133);
+    color: #fff;
+}
+
+.topbutton:hover,
+.bottombutton:hover {
+    background-color: #aeafaa;
+}
+
+.bottombutton {
+    visibility: visible;
+    width: auto;
+    max-width: 200px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    cursor: pointer;
+    font-family: verdana;
+    font-size: 15px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
 }
 
 a 
