@@ -9,6 +9,7 @@
     {
         var k = document.getElementById(hobby);
         var k2, k3;
+
         if (hobby == "sporthobby")
         {
             document.getElementById("sportbtn").style.color = "#c4efaa";
@@ -16,6 +17,9 @@
             document.getElementById("videogamesbtn").style.color = "goldenrod";
             k2 = document.getElementById("magichobby");
             k3 = document.getElementById("videogameshobby");
+            document.getElementById("ds1hobby").style.display = "none";
+            document.getElementById("ds2hobby").style.display = "none";
+            document.getElementById("ds3hobby").style.display = "none";
         }
         else if (hobby == "magichobby")
         {
@@ -24,6 +28,9 @@
             document.getElementById("videogamesbtn").style.color = "goldenrod";
             k2 = document.getElementById("sporthobby");
             k3 = document.getElementById("videogameshobby");
+            document.getElementById("ds1hobby").style.display = "none";
+            document.getElementById("ds2hobby").style.display = "none";
+            document.getElementById("ds3hobby").style.display = "none";
         }
         else if (hobby == "videogameshobby")
         {
@@ -32,14 +39,17 @@
             document.getElementById("magicbtn").style.color = "goldenrod";
             k2 = document.getElementById("sporthobby");
             k3 = document.getElementById("magichobby");
+            document.getElementById("ds1hobby").style.display = "block";
+            document.getElementById("ds2hobby").style.display = "block";
+            document.getElementById("ds3hobby").style.display = "block";
         }
+        k.style.display = "block";
         k2.style.display = "none";
         k3.style.display = "none";
-        k.style.display = "block";
     }
 </script>
 <body>
-    <p align="center"><a href="index.html"><strong>На главную</strong></a></p> 
+    <div align="center"><a href="index.html"><strong>На главную</strong></a></div> 
     <br>
     <div class="hobbies">
         <div id="magicbtn" onclick="ShowHobby('magichobby')" class="hobbies_buttons" align="center"><strong>Карточная магия</strong></div>
@@ -48,9 +58,12 @@
         </div>
     </div>
 
-    <p align="center"><video src="морф.mp4" controls="controls" id="magichobby" style="display: none" height=500 width=700></video></p>
-    <p align="center"><img src="volleyball.jpg" id="sporthobby" style="display: none" height=500 width=700></p>
-    <p align="center"><img src="heartstone.jpg" id="videogameshobby" style="display: none" height=500 width=700></p>
-
+    <div align="center"><video src="морф.mp4" controls="controls" id="magichobby" style="display: none" height=500 width=700></video></div>
+    <div align="center"><img src="volleyball.jpg" id="sporthobby" style="display: none" height=500 width=700></div>
+    <div align="center"><img src="heartstone.jpg" id="videogameshobby" style="display: none" height=500 width=700>
+        <div align="center"><img src="ds1.jpg" id="ds1hobby" style="display:none" height=500 width=700></div>
+        <div align="center"><img src="ds2.jpg" id="ds2hobby" style="display:none" height=865 wigth=700></div>
+        <div align="center"><img src="ds3.jpg" id="ds3hobby" style="display:none" height=500 width=700></div>
+    </div>
 </body>
 </html>

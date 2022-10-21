@@ -11,6 +11,7 @@ BODY
     background-size: cover;
 	font-size: 30px;
 	color: goldenrod;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 table
@@ -121,6 +122,31 @@ s
 .bad
 {
     background-color: darkred;
+}
+
+.main_buttons
+{
+    text-decoration-line: none;
+    margin: 25px;
+    border: 3px solid lightgray;
+    border-radius: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 30px;
+}
+
+.main_buttons:hover
+{
+    cursor: pointer;
+    color: gray;
+    background-color:#fff;
+}
+
+.hobbies_img
+{
+    text-align: center;
 }
 
 a 
