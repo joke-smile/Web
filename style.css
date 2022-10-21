@@ -9,7 +9,7 @@ BODY
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	font-size: 27px;
+	font-size: 30px;
 	color: goldenrod;
 }
 
@@ -29,10 +29,43 @@ s
     text-decoration-line:underline;
 }
 
-video
+.hobbies_buttons
 {
-    width: 500px;
-    height: 500px;
+    margin: 25px auto;
+    width: auto;
+    max-width: 400px;
+    border: 3px solid lightgray;
+    border-radius: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.hobbies_buttons:hover
+{
+    cursor: pointer;
+    color: gray;
+    background-color:#fff;
+}
+
+.about_buttons
+{
+    text-decoration-line: none;
+    margin: 25px;
+    border: 3px solid lightgray;
+    border-radius: 100px;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 30px;
+}
+
+.about_buttons:hover
+{
+    cursor: pointer;
+    color: gray;
+    background-color:#fff;
 }
 
 .evalutions
@@ -53,7 +86,7 @@ video
 {
     cursor: pointer;
     border-radius: 20px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .buttons
@@ -76,5 +109,3 @@ a
 {
 	color: goldenrod;
 }
-
-

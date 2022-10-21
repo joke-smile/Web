@@ -27,7 +27,7 @@
         }
         else if (hobby == "videogameshobby")
         {
-            document.getElementById("videogamesbtn").style.color = "c4efaa";
+            document.getElementById("videogamesbtn").style.color = "#c4efaa";
             document.getElementById("sportbtn").style.color = "goldenrod";
             document.getElementById("magicbtn").style.color = "goldenrod";
             k2 = document.getElementById("sporthobby");
@@ -41,13 +41,16 @@
 <body>
     <p align="center"><a href="index.html"><strong>На главную</strong></a></p> 
     <br>
-    <div id="magicbtn" onclick="ShowHobby('magichobby')" class="button" align="center"><strong>Карточная магия</strong></div>
-    <div id="sportbtn" onclick="ShowHobby('sporthobby')" class="button" align="center"><strong>Волейбол</strong></div>
-    <div id="videogamesbtn" onclick="ShowHobby('videogameshobby')" class="button" align="center"><strong>Компьютерные игры</strong></div>
+    <div class="hobbies">
+        <div id="magicbtn" onclick="ShowHobby('magichobby')" class="hobbies_buttons" align="center"><strong>Карточная магия</strong></div>
+        <div id="sportbtn" onclick="ShowHobby('sporthobby')" class="hobbies_buttons" align="center"><strong>Волейбол</strong></div>
+        <div id="videogamesbtn" onclick="ShowHobby('videogameshobby')" class="hobbies_buttons" align="center"><strong>Компьютерные игры</strong>
+        </div>
+    </div>
 
-    <p align="center"><video src="морф.mp4" controls="controls" id="magichobby" style="display: none"></video></p>
+    <p align="center"><video src="морф.mp4" controls="controls" id="magichobby" style="display: none" height=500 width=700></video></p>
     <p align="center"><img src="volleyball.jpg" id="sporthobby" style="display: none" height=500 width=700></p>
-    <p align="center"><img src="heartstone.jpg" id="videogameshobby" style="display: none"></p>
+    <p align="center"><img src="heartstone.jpg" id="videogameshobby" style="display: none" height=500 width=700></p>
 
 </body>
 </html>
