@@ -19,6 +19,11 @@ table
     font-size: 27px;
 }
 
+div 
+{
+    padding: 15px;
+}
+
 td 
 {
     border: 2px solid lightgray;
@@ -37,6 +42,10 @@ s
     max-width: 400px;
     border: 3px solid lightgray;
     border-radius: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
     text-align: center;
     font-size: 30px;
 }
@@ -71,6 +80,10 @@ s
 
 .studing_buttons
 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin: 25px auto;
     width: auto;
     max-width: 400px;
@@ -91,7 +104,6 @@ s
 {
     padding: 2%;
     color: goldenrod;
-    text-align: center;
 }
 
 .evalutions_table
@@ -99,19 +111,6 @@ s
     width: 100%;
     max-width: 1000px;
     margin:auto;
-}
-
-.button
-{
-    cursor: pointer;
-    border-radius: 20px;
-    font-size: 25px;
-}
-
-.buttons
-{
-    padding: 3%;
-    text-align: center;
 }
 
 .okey
@@ -204,4 +203,10 @@ s
 a 
 {
 	color: goldenrod;
+}
+
+.about_me_photo.main
+{
+    border-radius: 100px;
+    padding-left: 45px;
 }
