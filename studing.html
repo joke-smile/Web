@@ -10,18 +10,18 @@
         if (semestr == "1semestr")
         {
             document.getElementById("1btn").style.color = "#c4efaa";
-            document.getElementById("2btn").style.color = "#fff";
+            document.getElementById("2btn").style.color = "goldenrod";
             var k2 = document.getElementById("2semestr");
         }
         else 
         {
             document.getElementById("2btn").style.color = "#c4efaa";
-            document.getElementById("1btn").style.color = "#fff";
+            document.getElementById("1btn").style.color = "goldenrod";
             var k2 = document.getElementById("1semestr");
         }
 
         k2.style.display = "none";
-        k.style.display == "none" ? k.style.display = "table" : k.style.display = "table";
+        k.style.display = "table";
     }
 </script>
 <BODY>
@@ -29,9 +29,9 @@
 
 <div class="evalutions">
     <p align="center"><a href="index.html"> <strong>На главную</strong> </a></p>
-    <Div id="1btn" onClick="DrawTable('1semestr')" class="button" style="color: rgb (196, 239, 170);"><strong>Осенний семестр 2021/2022</strong></Div>
-    <div id="2btn" onClick="DrawTable('2semestr')" class="button" style="color: rgb (255, 255, 255);"><strong>Весенний семестр 2021/2022</strong></div>
-    <table id="1semestr" style="display: table" class="evalutions_table">
+    <Div id="1btn" onClick="DrawTable('1semestr')" class="hobbies_buttons"><strong>Осенний семестр 2021/2022</strong></Div>
+    <div id="2btn" onClick="DrawTable('2semestr')" class="hobbies_buttons"><strong>Весенний семестр 2021/2022</strong></div>
+    <table id="1semestr" style="display: none" class="evalutions_table">
         <tr>
                 <td>Наименование дисциплины</td>
                 <td>Преподаватель</td>
