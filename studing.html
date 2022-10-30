@@ -1,20 +1,18 @@
 <HTML>
+
 <HEAD>
-<link rel="stylesheet" href="style.css">
-<TITLE> Сведения об успеваемости </TITLE>
+    <link rel="stylesheet" href="style.css">
+    <TITLE> Сведения об успеваемости </TITLE>
 </HEAD>
 <script type="text/javascript">
-    function DrawTable(semestr)
-    {
+    function DrawTable(semestr) {
         var k = document.getElementById(semestr);
-        if (semestr == "1semestr")
-        {
+        if (semestr == "1semestr") {
             document.getElementById("1btn").style.color = "#c4efaa";
             document.getElementById("2btn").style.color = "goldenrod";
             var k2 = document.getElementById("2semestr");
         }
-        else 
-        {
+        else {
             document.getElementById("2btn").style.color = "#c4efaa";
             document.getElementById("1btn").style.color = "goldenrod";
             var k2 = document.getElementById("1semestr");
@@ -24,21 +22,26 @@
         k.style.display = "table";
     }
 </script>
-<BODY>
-<div class="evalutions">
-    <div align="center"><a href="index.html"> <strong>На главную</strong> </a></div>
-    <Div id="1btn" onClick="DrawTable('1semestr')" class="hobbies_buttons"><strong>Осенний семестр 2021/2022</strong></Div>
-    <div id="2btn" onClick="DrawTable('2semestr')" class="hobbies_buttons"><strong>Весенний семестр 2021/2022</strong></div>
-    <a href="index.html"><div style="padding-left: 15px"><img src="It's_me.jpg" height=100 width=100 style="border-radius: 100px; margin-top: -23%; position: fixed"></div></a>
 
-    <table id="1semestr" style="display: none" class="evalutions_table">
-        <tr>
+<BODY>
+    <div class="logo">
+        <a href="index.html"><img src="images/It's_me.jpg" height=100 width=100 style="border-radius: 100px;"></a>
+    </div>
+    <div class="evalutions">
+        <div align="center"><a href="index.html"> <strong>На главную</strong> </a></div>
+        <Div id="1btn" onClick="DrawTable('1semestr')" class="hobbies_buttons"><strong>Осенний семестр
+                2021/2022</strong></Div>
+        <div id="2btn" onClick="DrawTable('2semestr')" class="hobbies_buttons"><strong>Весенний семестр
+                2021/2022</strong></div>
+
+        <table id="1semestr" style="display: none" class="evalutions_table">
+            <tr>
                 <td>Наименование дисциплины</td>
                 <td>Преподаватель</td>
                 <td>КТ 1</td>
                 <td>КТ 2</td>
                 <td>ЭС</td>
-            <tr> 
+            <tr>
                 <td>Education Design</td>
                 <td>Байгулова Т.А.</td>
                 <td class="okey">5</td>
@@ -111,15 +114,15 @@
                 <td class="okey">4</td>
                 <td></td>
             </tr>
-        </tr>
-    </table>
-    <table id="2semestr" style="display: none" class="evalutions_table">
-        <tr>
-            <td>Наименование дисциплины</td>
-            <td>Преподаватель</td>
-            <td>КТ 1</td>
-            <td>КТ 2</td>
-            <td>ЭС</td>
+            </tr>
+        </table>
+        <table id="2semestr" style="display: none" class="evalutions_table">
+            <tr>
+                <td>Наименование дисциплины</td>
+                <td>Преподаватель</td>
+                <td>КТ 1</td>
+                <td>КТ 2</td>
+                <td>ЭС</td>
 
             <tr>
                 <td>Education Design</td>
@@ -177,14 +180,16 @@
                 <td class="okey">5</td>
                 <td class="okey">Зачёт: зачтено</td>
             </tr>
-        </tr>
-    </table>
-</div>
-<div style="margin-top: 21%">Вся информация была взята с
-<a target="blank" href="https://ocenka.tusur.ru/student_search/student/76de39ca3815be440a440a8629434a59#/my_progress">
-Официального сайта ТУСУРа
-</a>
-</div>
-<br>
+            </tr>
+        </table>
+    </div>
+    <div style="margin-top: 21%">Вся информация была взята с
+        <a target="blank"
+            href="https://ocenka.tusur.ru/student_search/student/76de39ca3815be440a440a8629434a59#/my_progress">
+            Официального сайта ТУСУРа
+        </a>
+    </div>
+    <br>
 </BODY>
+
 </HTML>

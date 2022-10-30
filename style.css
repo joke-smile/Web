@@ -1,42 +1,43 @@
-BODY 
-{
-    background:url("topic5.jpg")  no-repeat center center fixed;
-    -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-	-webkit-background-size: cover;
+BODY {
+    background: url("images/topic5.jpg") no-repeat center fixed;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-	font-size: 30px;
-	color: goldenrod;
+    font-size: 30px;
+    color: goldenrod;
     font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
 }
 
-table
-{
+html {
+    width: 100%;
+    height: 100%;
+}
+
+table {
     font-size: 27px;
 }
 
-div 
-{
-    padding: 15px;
-}
-
-td 
-{
+td {
     border: 2px solid lightgray;
     text-align: center;
 }
 
-s 
-{
-    text-decoration-line:underline;
+s {
+    text-decoration-line: underline;
 }
 
-.hobbies_buttons
-{
+p{
+    margin: 0;
+}
+
+.hobbies_buttons {
     margin: 25px auto;
     width: auto;
     max-width: 400px;
@@ -50,15 +51,13 @@ s
     font-size: 30px;
 }
 
-.hobbies_buttons:hover
-{
+.hobbies_buttons:hover {
     cursor: pointer;
     color: gray;
-    background-color:#fff;
+    background-color: #fff;
 }
 
-.about_buttons
-{
+.about_buttons {
     text-decoration-line: none;
     margin: 25px;
     border: 3px solid lightgray;
@@ -71,15 +70,13 @@ s
     font-size: 30px;
 }
 
-.about_buttons:hover
-{
+.about_buttons:hover {
     cursor: pointer;
     color: gray;
-    background-color:#fff;
+    background-color: #fff;
 }
 
-.studing_buttons
-{
+.studing_buttons {
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 25px;
@@ -93,38 +90,32 @@ s
     font-size: 30px;
 }
 
-.studing_buttons:hover
-{
+.studing_buttons:hover {
     cursor: pointer;
     color: gray;
-    background-color:#fff;
+    background-color: #fff;
 }
 
-.evalutions
-{
+.evalutions {
     padding: 2%;
     color: goldenrod;
 }
 
-.evalutions_table
-{
+.evalutions_table {
     width: 100%;
     max-width: 1000px;
-    margin:auto;
+    margin: auto;
 }
 
-.okey
-{
+.okey {
     background-color: green;
 }
 
-.bad
-{
+.bad {
     background-color: darkred;
 }
 
-.main_buttons
-{
+.main_buttons {
     text-decoration-line: none;
     margin: 25px;
     border: 3px solid lightgray;
@@ -136,15 +127,13 @@ s
     font-size: 30px;
 }
 
-.main_buttons:hover
-{
+.main_buttons:hover {
     cursor: pointer;
     color: gray;
-    background-color:#fff;
+    background-color: #fff;
 }
 
-.hobbies_img
-{
+.hobbies_img {
     text-align: center;
 }
 
@@ -165,16 +154,31 @@ s
     -khtml-border-radius: 5px;
 }
 
-.topbutton {
+.topbutton,
+.bottombutton {
+    width: auto;
+    max-width: 200px;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+    cursor: pointer;
+    font-size: 15px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
     border: 2px solid #ccc;
     background-color: rgb(112, 99, 133);
     color: #fff;
 }
 
 .bottombutton {
-    border: 2px solid #ccc;
-    background-color: rgb(112, 99, 133);
-    color: #fff;
+    left: 50px;
+}
+
+.topbutton {
+    right: 50px;
 }
 
 .topbutton:hover,
@@ -182,31 +186,33 @@ s
     background-color: #aeafaa;
 }
 
-.bottombutton {
-    visibility: visible;
-    width: auto;
-    max-width: 200px;
-    text-align: center;
-    padding: 10px;
+
+a {
+    color: goldenrod;
+}
+
+.logo {
     position: fixed;
-    bottom: 50px;
-    left: 50px;
-    cursor: pointer;
-    font-family: verdana;
-    font-size: 15px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -khtml-border-radius: 5px;
+    width: auto;
+    right: 10px;
+    margin: 20px;
 }
 
-a 
-{
-	color: goldenrod;
+
+.info {
+    padding-top: 20px;
+    text-align: center;
 }
 
-.about_me_photo.main
-{
-    border-radius: 100px;
-    padding-left: 45px;
+.about {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.about div {
+    padding-bottom: 50px;
+}
+
+.other {
+    padding-top: 100px;
 }
