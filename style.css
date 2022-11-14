@@ -138,6 +138,7 @@ a {
     max-width: 1000px;
     margin: auto;
     font-size: 27px;
+    border-collapse: collapse;
 }
 
 .evalutions_table td {
