@@ -44,7 +44,7 @@ a {
 
 .content {
     height: 100%;
-    width: 70%;
+    width: 100%;
     vertical-align: top;
     padding-top: 20px;
 }
@@ -69,9 +69,12 @@ a {
     text-align: center;
 }
 
+.hobbies {
+    align-items: left;
+}
+
 .hobbies_buttons {
     margin: 25px auto;
-    width: auto;
     max-width: 400px;
     border: 3px solid lightgray;
     border-radius: 100px;
@@ -79,7 +82,6 @@ a {
     padding-bottom: 5px;
     padding-left: 25px;
     padding-right: 25px;
-    text-align: center;
     font-size: 30px;
 }
 
@@ -152,6 +154,10 @@ a {
 
 .bad {
     background-color: darkred;
+}
+
+.header_buttons div{
+    display: flex;
 }
 
 .main_buttons {
@@ -233,13 +239,7 @@ a {
 }
 
 .info {
-   
     text-align: center;
-}
-
-.about {
-    text-align: center;
-    margin-top: 10%;
 }
 
 .about div {
