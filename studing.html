@@ -24,17 +24,25 @@
 </script>
 
 <BODY>
-    <div class="logo">
-        <a href="index.html"><img src="images/It's_me.jpg" height=100 width=100 style="border-radius: 100px;"></a>
-    </div>
-    <div class="evalutions">
-        <div align="center"><a href="index.html"> <strong>На главную</strong> </a></div>
-        <Div id="1btn" onClick="DrawTable('1semestr')" class="hobbies_buttons"><strong>Осенний семестр
-                2021/2022</strong></Div>
-        <div id="2btn" onClick="DrawTable('2semestr')" class="hobbies_buttons"><strong>Весенний семестр
-                2021/2022</strong></div>
-
-        <table id="1semestr" style="display: none" class="evalutions_table">
+    <table class="main">
+        <tr>
+            <td class="top">
+                <div class="logo">
+                    <a href="index.html"><img src="images/It's_me.jpg" height=100 width=100 style="border-radius: 100px;"></a>
+                </div>
+                <div class="evalutions">
+                    <div align="center"><a href="index.html"> <strong>На главную</strong> </a></div>
+            </td>
+        </tr>
+        <tr>
+            <td class="content">
+                <Div id="1btn" onClick="DrawTable('1semestr')" class="hobbies_buttons"><strong>Осенний семестр
+                    2021/2022</strong>
+                </Div>
+                <div id="2btn" onClick="DrawTable('2semestr')" class="hobbies_buttons"><strong>Весенний семестр
+                    2021/2022</strong>
+                </div>
+                <table id="1semestr" style="display: none" class="evalutions_table">
             <tr>
                 <td>Наименование дисциплины</td>
                 <td>Преподаватель</td>
@@ -182,14 +190,20 @@
             </tr>
             </tr>
         </table>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+                <div style="margin-top: 21%">Вся информация была взята с
+                    <a target="blank"
+                        href="https://ocenka.tusur.ru/student_search/student/76de39ca3815be440a440a8629434a59#/my_progress">
+                        Официального сайта ТУСУРа
+                    </a>
+                </div>
+            </td>
+        </tr>
+    </table>  
     </div>
-    <div style="margin-top: 21%">Вся информация была взята с
-        <a target="blank"
-            href="https://ocenka.tusur.ru/student_search/student/76de39ca3815be440a440a8629434a59#/my_progress">
-            Официального сайта ТУСУРа
-        </a>
-    </div>
-    <br>
 </BODY>
 
 </HTML>

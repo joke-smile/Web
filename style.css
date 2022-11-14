@@ -20,21 +20,53 @@ html {
     height: 100%;
 }
 
-table {
-    font-size: 27px;
+a {
+    color: goldenrod;
 }
 
-td {
-    border: 2px solid lightgray;
-    text-align: center;
+.main {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
-s {
+.main p {
+    margin: 0;
+}
+
+.top {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid white;
+    font-size: 30px;
+    padding: 5px;
+}
+
+.content {
+    height: 100%;
+    width: 70%;
+    vertical-align: top;
+    padding-top: 20px;
+}
+
+.footer {
+    width: 100%;
+    height: auto;
+    border-top: 1px solid white;
+    font-size: 30px;
+}
+
+.s {
     text-decoration-line: underline;
 }
 
-p{
-    margin: 0;
+.table {
+    font-size: 27px;
+}
+
+.table td {
+    border: 2px solid lightgray;
+    text-align: center;
 }
 
 .hobbies_buttons {
@@ -105,6 +137,12 @@ p{
     width: 100%;
     max-width: 1000px;
     margin: auto;
+    font-size: 27px;
+}
+
+.evalutions_table td {
+    border: 2px solid lightgray;
+    text-align: center;
 }
 
 .okey {
@@ -186,11 +224,6 @@ p{
     background-color: #aeafaa;
 }
 
-
-a {
-    color: goldenrod;
-}
-
 .logo {
     position: fixed;
     width: auto;
@@ -198,9 +231,8 @@ a {
     margin: 20px;
 }
 
-
 .info {
-    padding-top: 20px;
+   
     text-align: center;
 }
 
@@ -213,6 +245,13 @@ a {
     padding-bottom: 50px;
 }
 
-.other {
-    padding-top: 100px;
+.other_tables {
+    margin-top: 5px;
+}
+
+.icon {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin: 0;
 }
