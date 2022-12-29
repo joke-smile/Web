@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Tema/style.css">
+    <title>Таблица безопасных цветов</title>
+<script type="text/javascript">
+    function getTrueTable(contID)
+    {
+        var r = 0;
+        var g = 0;
+        var b = 0;
+        var table = "<table width='100%'>";
+        while (r <= 255)
+        {
+        g = 0;
+        while (g <= 255)
+        {
+        table += "<tr>";
+        b = 0;
+        while (b <= 255)
+        {
+        table += "<td style='width:20px; height:10px; background-color: rgb("+r+","+g+","+b+");color: rgb("+(255-r)+
+        ","+(255-g)+","+(255-b)+")'>RGB("+r+","+g+","+b+")</td>"
+        b += 51;
+        }
+        table += "</tr>"
+        g += 51;
+        }
+        r += 51;
+        }
+        table += "</table>";
+        document.getElementById(contID).innerHTML = table;
+    }
+</script>
+</head>
+<body onload="Clock_form()">
+    <script src="../js/clock.js"></script>
+    <table class="main">
+        <tr>
+            <td class="top">
+                <form name=form metod="get">
+                    <input name=f_clock maxlength=8 size=8 class="clock" readonly>
+                </form>
+                <p align="center" style="padding: 2%; margin: 0">
+                    <a href="lab3.html">
+                        <strong>Назад</strong>
+                    </a>
+                </p>
+
+            </td>
+        </tr>
+        <tr>
+            <td class="content" id="truetable">
+                <div>
+                    <button style="display: block" class="lab3_buttons" onclick="getTrueTable('truetable');">Отрисовать таблицу безопасных цветов</button>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td class="footer">
+
+            </td>
+        </tr>
+    </table>
+    
+</body>
+</html>
