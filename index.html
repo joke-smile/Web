@@ -1,37 +1,51 @@
 <HTML>
 <HEAD>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Tema/style.css">
     <TITLE> pff_ladno </TITLE>
 </HEAD>
-<BODY>
+<BODY onload="Clock_form()">
+    <script src="js/clock.js"></script>
     <table class="main">
         <tr>
             <td class="top">
                 <div class="logo">
-                    <a href="index.html"><img src="images/It's_me.jpg" height=100 width=100 style="border-radius: 100px;"></a>
+                    <a><img src="images/It's_me.jpg"></a>
                 </div>
+                <form name=form metod="get" class="clock">
+                    <input name=f_clock maxlength=8 size=8 class="clock" readonly>
+                </form>
                 <div class="info">
                     <p>Персональная страница Зименкина Льва Алексеевича (18.04.2003)</p>
                     <p>Студент факультета вычислительных систем группы 571-2</p>
                 </div>
-                
             </td>
         </tr>
         <tr>
             <td class="content">
                 <div class="header_buttons">
-                    <div><a href="studing.html" class="main_buttons"> Сведения об успеваемости </a></div>
+                    <div><a href="Pages/studing.html" class="main_buttons"> Сведения об успеваемости </a></div>
                     
-                    <div><a href="Attendance.html" class="main_buttons"> Посещаемость </a></div>
+                    <div><a href="Pages/Attendance.html" class="main_buttons"> Посещаемость </a></div>
                     
-                    <div><a href="about.html" class="main_buttons">Обо мне</a></div>
+                    <div><a href="Pages/about.html" class="main_buttons">Обо мне</a></div>
                     
-                    <div><a href="other.html" class="main_buttons">Другое</a></div>
+                    <div><a href="Pages/other.html" class="main_buttons">Другое</a></div>
+
+                    <div><a href="Pages/teststyle2.html" class="main_buttons">Жёсткая табличная вёрстка</a></div>
+                    
+                    <div><a href="Pages/lab3.html" class="main_buttons">3-я лабораторная работа</a></div>
+
+                    <div><a href="Pages/lab4.html" class="main_buttons">4-я лабораторная работа</a></div>
                 </div>
             </td>
         </tr>
         <tr>
             <td class="footer">
+                <div class="footer_buttons">
+                    <div><a href="Results/Lab2_web.pdf" class="main_buttons">Отчёт по лабе 2</a></div>
+                    <div><a href="Results/Lab3_web.pdf" class="main_buttons">Отчёт по лабе 3</a></div>
+                    <div><a href="Results/Laba4_web.pdf" class="main_buttons">Отчёт по лабе 4</a></div>
+                </div>
                 <p>Мой Вк:  
                     <a href="https://vk.com/imeliodasi">
                         <img src="images/vkicon.png" alt="Иконка Вк" class="icon">

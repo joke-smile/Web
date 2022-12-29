@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Tema/style.css">
+    <title>lab3</title>
+</head>
+<body onload="Clock_form(), Timer()">
+    <script src="../js/script.js"></script>
+    <script src="../js/time.js"></script>
+    <script src="../js/clock.js"></script>
+    <table class="main">
+        <tbody>
+            <tr>
+                <td class="top">
+                    <div class="logo">
+                        <a href="../index.html">
+                            <img src="../images/It's_me.jpg">
+                        </a>
+                    </div>
+                    <form name=form metod="get" class="clock">
+                        <input name=f_clock maxlength=8 size=8 class="clock" readonly>
+                    </form>
+                    <div>
+                        <p style="font-size: 20px !important; padding-top: 2px; padding-bottom: 2px;">
+                            Сколько секунд вы находитесь на странице:
+                        </p>
+                    </div>
+
+                    <form name="form2" metod="get">
+                        <input name="k_clock" id="time" class="clock" readonly></input>
+                    </form>
+                    
+                    <p align="center" style="padding: 2%; margin: 0">
+                        <a href="../index.html">
+                            <strong>На главную</strong>
+                        </a>
+                    </p>
+                </td>
+            </tr>
+            <tr>
+                <td class="content">
+                    <table id = "lab3_menu" class = "menu"> 
+                        <tr id = "item1" class = "item" onclick = "ShowElement('task1')">
+                            <td> Первое задание </td>
+                        </tr>
+                        <tr id="item2" class="item" onclick="ShowElement('task2')">
+                            <td> Второе задание </td>
+                        </tr>
+                        <tr id="item3" class="item" onclick="ShowElement('task3')">
+                            <td> Третье задание </td>
+                        </tr>
+                        <tr id="item4" class="item" onclick="ShowElement('task4')">
+                            <td> Четвёртое задание </td>
+                        </tr>
+                    </table>
+
+                    <div align="center">
+                        <button id="task1" type="button" class="lab3_buttons" onclick="GetRandomArray(5), Show('lab3_table', 'table')">
+                            Сгенерировать последовательность чисел и вычислить среднее арифметическое
+                        </button>
+                    </div>
+
+                        <table id="lab3_table" style="display: none;" class="lab3_table" align="center">
+                            <tr>
+                                <td id="0">
+
+                                </td>
+                                <td id="1">
+
+                                </td>
+                                <td id="2">
+
+                                </td>
+                                <td id="3">
+
+                                </td>
+                                <td id="4">
+
+                                </td>
+                                <td id="5" style="background-color:steelblue;">
+
+                                </td>
+                            </tr>
+                        </table>
+
+                    <div align="center">
+                        <button id="task2" type="button" class="lab3_buttons" onclick="GetTime(), Show('TimeBeforeNewYear', 'block')">
+                            Через сколько часов наступит новый год
+                        </button>
+                    </div>
+                    <div align="center" id="TimeBeforeNewYear"></div>
+                    <div id="task3" style="display: none" align="center">
+                        <p>
+                            Наведите на картинку
+                        </p>
+                        <img id="imag" src="../images/ds1.jpg" width="300" height="300" onmouseover="ChangeImage('../images/ds2.jpg')"
+                        onmouseout="ChangeImage('../images/ds1.jpg')">
+                    </div>
+                    <div align="center">
+                        <form action="tableofcolors.html">
+                            <button id="task4" class="lab3_buttons">
+                                Таблица безопасных цветов
+                            </button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="footer">
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
