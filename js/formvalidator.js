@@ -2,8 +2,8 @@ var count = 0;
 var formSize = 6;
 function CheckFIO(elem, btn)
 {
-    let reg = /^[a-zа-яё]+$/i;
-    let value = reg.test(elem.value);
+    var reg = /^[a-zа-яё]+$/i;
+    var value = reg.test(elem.value);
     if (!value) 
     {
         alert("Вводить можно только буквы");
@@ -21,9 +21,9 @@ function CheckFIO(elem, btn)
 
 function CheckPhone(elem, btn)
 {
-    let result = "";
-    let reg = /^\d+$/;
-    let value = reg.test(elem.value);
+    var result = "";
+    var reg = /^\d+$/;
+    var value = reg.test(elem.value);
     if (elem.value.length == 11 && value == true)
     {
         result += "Успешно\n";
@@ -47,10 +47,10 @@ function CheckPhone(elem, btn)
 
 function CheckDate(elem, btn)
 {
-    let date = Date.now();
-    let date2 = Date.parse(elem.value);
-    let reg = /(\d+).(\d+).(\d+)/;
-    let value = reg.test(elem.value);
+    var date = Date.now();
+    var date2 = Date.parse(elem.value);
+    var reg = /(\d+).(\d+).(\d+)/;
+    var value = reg.test(elem.value);
     if (!value)
     {
         alert("Неправильный формат даты");
@@ -73,8 +73,8 @@ function CheckDate(elem, btn)
 
 function CheckEmail(elem, btn)
 {
-    let reg = /^.+@[a-zA-Z]+\.[a-zA-Z]{2,3}$/;
-    let value = reg.test(elem.value);
+    var reg = /^.+@[a-zA-Z]+\.[a-zA-Z]{2,3}$/;
+    var value = reg.test(elem.value);
     if (!value)
     {
         alert("Неправильный формат");
