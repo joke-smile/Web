@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Индивидуальное задание 4</title>
+    <link rel="stylesheet" href="../Tema/style.css">
+    <script src="../js/clock.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button").click(function() {
+                $('#images img:odd').animate({bottom: '108px'}, 'slow');
+            });
+        });
+    </script>
+</head>
+<body onload="Clock_form()">
+    <div class="logo">
+        <a href="../index.html"><img src="../images/It's_me.jpg"></a>
+    </div>
+    <form name=form metod="get" class="clock">
+        <input name=f_clock maxlength=8 size=8 class="clock" readonly>
+    </form>
+    <div align="center" style="padding: 2%">
+        <a href="lab5.html">
+            <strong>Назад</strong>
+        </a>
+    </div>
+
+    <button type="button" class="task_buttons">Click</button>
+    <div id="images">
+        <img src="../images/ds1.jpg" width="100px" height="100px" style="position:relative; z-index: 2;"><br>
+        <img src="../images/ds2.jpg" width="100px" height="100px" style="position:relative; z-index: 1;"><br>
+        <img src="../images/ds3.jpg" width="100px" height="100px" style="position:relative; z-index: 2;"><br>
+        <img src="../images/heartstone.jpg" width="100px" height="100px" style="position:relative; z-index: 1;"><br>
+        <img src="../images/It's_me.jpg" width="100px" height="100px" style="position:relative; z-index: 2"><br>
+        <img src="../images/volleyball.jpg" width="100px" height="100px" style="position:relative; z-index: 1">
+    </div>
+</body>
+</html>

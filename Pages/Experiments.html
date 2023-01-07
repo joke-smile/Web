@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Индивидуальное задание 1</title>
+    <link rel="stylesheet" href="../Tema/style.css">
+    <script src="../js/clock.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#btn1").click(function() {
+                $("tr:odd").hide();
+                
+            });
+            $("#btn2").click(function() {
+                $("tr:odd").show();
+            });
+        });
+    </script>
+</head>
+<body onload="Clock_form()">
+    <div class="logo">
+        <a href="../index.html"><img src="../images/It's_me.jpg"></a>
+    </div>
+    <form name=form metod="get" class="clock">
+        <input name=f_clock maxlength=8 size=8 class="clock" readonly>
+    </form>
+    <div align="center" style="padding: 2%">
+        <a href="lab5.html">
+            <strong>Назад</strong>
+        </a>
+    </div>
+    <button type="button" id="btn1" class="task_buttons">Click to hide</button>
+    <button type="button" id="btn2" class="task_buttons">Click to show</button>
+    <table class="table">
+        <tr>
+            <td>
+                Первая строка
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Вторая строка
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Третья строка
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Четвёртая строка
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

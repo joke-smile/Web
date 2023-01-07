@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 13</title>
+    <link rel="stylesheet" href="../Tema/style.css">
+    <script src="../js/clock.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#flip").click(function() {
+                $("#panel").slideDown("slow");
+            });
+        });
+    </script>
+    <style type="text/css">
+        #panel, #flip
+        {
+            padding:5px;
+            text-align: center;
+            background-color:#e533cc;
+            border: solid 1px #c3c3c3;
+        }
+        #panel
+        {
+            padding: 50px;
+            display: none;
+        }
+    </style>
+</head>
+<body onload="Clock_form()">
+    <div class="logo">
+        <a href="../index.html"><img src="../images/It's_me.jpg"></a>
+    </div>
+    <form name=form metod="get" class="clock">
+        <input name=f_clock maxlength=8 size=8 class="clock" readonly>
+    </form>
+    <div align="center" style="padding: 2%">
+        <a href="lab5.html">
+            <strong>Назад</strong>
+        </a>
+    </div>
+    <div id="flip">Click to slide down panel</div>
+    <div id="panel">Hello world!</div>
+</body>
+</html>

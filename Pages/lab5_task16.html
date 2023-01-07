@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 16</title>
+    <link rel="stylesheet" href="../Tema/style.css">
+    <script src="../js/clock.js"></script>
+</head>
+<body onload="Clock_form()">
+    <div class="logo">
+        <a href="../index.html"><img src="../images/It's_me.jpg"></a>
+    </div>
+    <form name=form metod="get" class="clock">
+        <input name=f_clock maxlength=8 size=8 class="clock" readonly>
+    </form>
+    <div align="center" style="padding: 2%">
+        <a href="lab5.html">
+            <strong>Назад</strong>
+        </a>
+    </div>
+    
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <ul>
+        <li>
+            <a href="http://jquery.com">jQuery</a>
+            <ul>
+                <li>
+                    <a href="http://blog.jquery.com">jQuery Bloq</a>
+                </li>
+            </ul>
+        </li>
+        <li><a href="http://sizzlejs.com">Sizzle</a></li>
+    </ul>
+
+    <script>
+        var links = $('a', 'li');
+        for (let i = 0; i < links.length; i++)
+        {
+            alert(i + ": " + links[i].href);// 3 ссылки по очереди
+        }
+    </script>
+</body>
+</html>

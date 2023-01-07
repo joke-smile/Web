@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Задание 17</title>
+    <link rel="stylesheet" href="../Tema/style.css">
+    <script src="../js/clock.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body onload="Clock_form()">
+    <div class="logo">
+        <a href="../index.html"><img src="../images/It's_me.jpg"></a>
+    </div>
+    <form name=form metod="get" class="clock">
+        <input name=f_clock maxlength=8 size=8 class="clock" readonly>
+    </form>
+    <div align="center" style="padding: 2%">
+        <a href="lab5.html">
+            <strong>Назад</strong>
+        </a>
+    </div>
+
+    <a href="http://wikipedia.ru">Википедия</a>
+    <ul>
+        <li><a href="http://jquery.com">jQuery</a></li>
+        <li><a href="http://sizzlejs.com">Sizzle</a></li>
+        <li><a href="http://blog.jquery.com">jQuery Blog</a></li>
+    </ul>
+    <script>
+        var links = $('li a');//найти все ссылки на странице внутри li
+
+        links.each(function(i, a) {
+            alert(i + ": " + a.innerHTML);
+
+            if (i == 1) return false; //стоп на элементе коллекции с индексом 1
+        });
+    </script>
+</body>
+</html>
