@@ -8,8 +8,8 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <script>
         $(document).ready(function() {
-            $("[align='center']").dblclick(function() {
-                $(this).toggle();
+            $("button").dblclick(function() {
+                $("[align='center']").toggle();
             });
         });
     </script>
@@ -26,7 +26,8 @@
             <strong>Назад</strong>
         </a>
     </div>
-    <div align="center">center (double click to hide)</div>
+    <button type="button" class="task_buttons">DoubleClick to toggle</button>
+    <div align="center">center</div>
     <div>left</div>
 </body>
 </html>
